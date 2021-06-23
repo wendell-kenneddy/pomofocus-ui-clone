@@ -1,0 +1,134 @@
+main.container {
+  width: 90vw;
+  max-width: 62rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+main.container #timer {
+  background-color: var(--light-white);
+  border: none;
+  border-radius: .4rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0 3rem 0;
+  width: 100%;
+  max-width: 48rem;
+}
+
+main.container #timer .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+
+main.container #timer .btn-group button {
+  background-color: transparent;
+  border: none;
+  border-radius: .4rem;
+  padding: .2rem 1.2rem;
+  height: 2.8rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+main.container #timer .btn-group button.active {
+  background-color: var(--light-black);
+  font-weight: 700;
+}
+
+main.container #timer .timer-info {
+  margin-top: 2rem;
+  font-size: 12rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+main.container #timer #start-button {
+  background-color: var(--white);
+  border: none;
+  border-radius: .4rem;
+  margin-top: 2rem;
+  padding: 0 1.2rem;
+  width: 20rem;
+  height: 5.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--red);
+  cursor: pointer;
+  box-shadow: 0 6px 0 0 var(--mid-white);
+  transition: .5s ease-out;
+}
+
+main.container #current-state {
+  margin-top: 2.2rem;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+main.container #tasks {
+  margin: 2rem 0 4.2rem 0;
+  width: 100%;
+  max-width: 48rem;
+}
+
+main.container #tasks .tasks-display {
+  border-bottom: 0.2rem solid var(--grey-white);
+  padding-bottom: 1.4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main.container #tasks .tasks-display span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+main.container #tasks .tasks-display button {
+  background-color: var(--lighter-white);
+  border: none;
+  border-radius: .4rem;
+  padding: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+main.container #tasks .tasks-display button:hover {
+  opacity: 1;
+}
+
+main.container #tasks .add-task {
+  background-color: var(--black);
+  border: 0.2rem dashed var(--greyish-white);
+  border-radius: .4rem;
+  margin-top: 1.8rem;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  opacity: .8;
+  cursor: pointer;
+}
+
+main.container #tasks .add-task:hover {
+  opacity: 1;
+}
+
+main.container #tasks .add-task span {
+  font-weight: 700;
+  color: var(--white);
+}

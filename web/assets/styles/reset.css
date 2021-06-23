@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #db524d;
+  --black: rgba(0, 0, 0, 0.1);
+  --light-black: rgba(0, 0, 0, .15);
+  --white: #FFF;
+  --lighter-white: rgba(255, 255, 255, 0.2);
+  --light-white: rgba(255, 255, 255, .1);
+  --mid-white: rgb(235, 235, 235);
+  --grey-white: rgba(255, 255, 255, .6);
+  --greyish-white: rgba(255, 255, 255, .4);
+
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  background-color: var(--red);
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+body, button, a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.progress-bar {
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0 auto 4rem auto;
+  width: 90vw;
+  height: .1rem;
+  max-width: 62rem;
+}
